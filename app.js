@@ -14,7 +14,7 @@ res.sendFile(__dirname + '/public/index.html');
 });
 
 
-app.get('/:a/:b/:c', function (req, res) {  
+app.get('/:a', function (req, res) {  
 var p = req.params.a;
 console.log(req.params);
 res.sendFile(__dirname + '/public/'+p+'.html');
